@@ -355,6 +355,7 @@ const ignoreInput = document.getElementById('ignore-input') as HTMLInputElement;
 const statusEl = document.getElementById('status') as HTMLDivElement;
 
 let sortOrder: 'row' | 'column' = 'row';
+let statusTimeout: number | null = null;
 
 // Update line counter
 function updateLineCounter(): void {
@@ -462,10 +463,16 @@ window.onmessage = (event) => {
 };
 
 function showStatus(message: string, isError = false): void {
+  // Clear previous timeout to prevent memory leak
+  if (statusTimeout !== null) {
+    clearTimeout(statusTimeout);
+  }
+  
   statusEl.textContent = message;
   statusEl.className = 'status visible ' + (isError ? 'error' : 'success');
   
-  setTimeout(() => {
+  statusTimeout = setTimeout(() => {
     statusEl.classList.remove('visible');
-  }, 2500);
+    statusTimeout = null;
+  }, 2500) as unknown as number;
 }
