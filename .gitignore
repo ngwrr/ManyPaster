@@ -1,40 +1,7 @@
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-
-# OS files
 .DS_Store
 Thumbs.db
-
-# IDE
-.idea/
-.vscode/
 *.swp
 *.swo
-
-# Logs
 *.log
-npm-debug.log*
-
-# Test coverage
-coverage/
-
-# Temporary files
 *.tmp
 *.temp
-/tmp/
-
-# Screenshots (development)
-*.png
-*.jpg
-*.jpeg
-
-# Documentation (local only)
-PRD.md
-TASKS.md
-PIXSO_API_REFERENCE.md
-
-# Lock files (optional - можно убрать если хочешь коммитить)
-# package-lock.json

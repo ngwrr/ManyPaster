@@ -2,8 +2,8 @@
   "name": "ManyPaster",
   "id": "manypaster-local-dev",
   "version": "1.0.0",
-  "main": "dist/main.js",
-  "ui": "dist/ui.html",
+  "main": "main.js",
+  "ui": "ui.html",
   "description": "Bulk text paste into multiple text layers",
   "author": "Yngwarr"
 }
