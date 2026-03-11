@@ -31,5 +31,10 @@ coverage/
 *.jpg
 *.jpeg
 
+# Documentation (local only)
+PRD.md
+TASKS.md
+PIXSO_API_REFERENCE.md
+
 # Lock files (optional - можно убрать если хочешь коммитить)
 # package-lock.json
