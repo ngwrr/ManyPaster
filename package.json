@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@pixso/plugin-cli": "^1.0.0",
-    "@pixso/plugin-typings": "^1.0.0",
+    "@pixso/plugin-typings": "0.8.0",
     "typescript": "^5.0.0",
     "vitest": "^3.0.0"
   }
